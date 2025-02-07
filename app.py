@@ -1,13 +1,17 @@
+# Import necessary modules from Flask and Transformers.
 from flask import Flask, render_template, request
 from transformers import pipeline
 
+#! instance of the Flask application.
 app = Flask(__name__)
 
+
+#! Initialize the emotion analysis pipeline.
 emotion_analyzer = pipeline(
     "text-classification",
-    model="j-hartmann/emotion-english-distilroberta-base",
+    model="j-hartmann/emotion-english-distilroberta-base", 
     device="cpu"
-)
+) #! "j-hartmann/emotion-english-distilroberta-base" model is pre-trained for emotion classification.
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
