@@ -1,0 +1,11 @@
+# Environnement virtuel
+venv/
+# Node modules (si tu utilises npm)
+node_modules/
+# Fichiers Python compilés
+__pycache__/
+*.pyc
+# Fichiers spécifiques à macOS
+.DS_Store
+# Variables d'environnement (si présentes)
+.env
