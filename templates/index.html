@@ -3,40 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Analyseur de Sentiments</title>
-    <!-- <script src="https://cdn.tailwindcss.com"></script>  -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/tailwind.css') }}">
 </head>
-<body class=" ">
+<body>
 
-<header class="">
-    <div>
-        <img src="{{ url_for('static', filename='images/header-image2.png') }}" alt="Logo ou Header">
-    </div>
-    <!-- <img src="{{ url_for('static', filename='images/header-image.png') }}" alt="Logo ou Header"> -->
+    <header >
+        <div>
+            <img src="{{ url_for('static', filename='images/header-image2.png') }}" alt="Logo">
+        </div>
 
-</header>
+    </header>
 
 
-<div class="containr">
+    <div class="containr">
 
-    <!-- <div class="cardd">
-        <h1 class="">Analyseur de Sentiments</h1>
-        <form action="/" method="POST" class="">
-            <textarea name="text" rows="6" class="" placeholder="Entrez votre texte ici..."></textarea>
-            <button type="submit" class="">Analyser</button>
-        </form>
-    </div> -->
 
-    <div class="form-container">
-        <h1 class="">Emotion Analyzer</h1>
-        <form action="/" method="POST" class="form">
-            <textarea name="text" rows="6" class="" placeholder="Entrez votre texte ici..."></textarea>
-            <button type="submit" class="">Analyser</button>
-        </form>
+        <div class="form-container">
+            <h1 class="">Emotion Analyzer</h1>
+            <form action="/" method="POST" class="form">
+                <textarea name="text" rows="6" class="" placeholder="Enter your text here..."></textarea>
+                <button type="submit" class="">Analyze</button>
+            </form>
+        </div>
+
     </div>
 
-</div>
-
-</body>
+</body> 
 </html>

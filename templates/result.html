@@ -3,43 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Résultats de l'Analyse</title>
-    <!-- <script src="https://cdn.tailwindcss.com"></script>  -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/tailwind.css') }}">
 </head>
 <body class="">
 
-<header class="">
-    <img src="{{ url_for('static', filename='images/header-image2.png') }}" alt="Logo ou Header">
-</header>
+    <header class="">
+        <img src="{{ url_for('static', filename='images/header-image2.png') }}" alt="Logo">
+    </header>
 
-<div class="">
+    <div class="containr">
 
-    <div class="">
-        <h1 class="r">Résultats de l'Analyse</h1>
-        <div class="">
-            <h2 class="">Texte analysé :</h2>
+        <div class="form-container">
+            <h1 class="r">Results </h1>
             <div class="">
-                {{ text }}
+                <h2 class="">Text to analyze :</h2>
+                <div class="plb">
+                    {{ text }}
+                </div>
+            </div>
+            <div class="">
+                <h2 class="">Evaluation :</h2>
+                <ul class="plb">
+                    {% for result in results %}
+                    <li class="">
+                        {{ result.label }} 
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="">
+                <button class="btnn"><a href="/" class="">Analyze another text</a></button>
             </div>
         </div>
-        <div class="">
-            <h2 class="">Évaluation :</h2>
-            <ul>
-                {% for result in results %}
-                <li class="">
-                    <span class="">Label :</span> {{ result.label }} |
-                    <span class="">Score :</span> {{ result.score | round(2) }}
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-        <div class="">
-            <a href="/" class="">Analyser un autre texte</a>
-        </div>
-    </div>
 
-</div>
+    </div>
 
 </body>
 </html>

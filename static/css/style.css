@@ -1,7 +1,4 @@
-
-
 body {
-    /* background-color: #1c1c1c !important;  */
     background: linear-gradient(45deg, #000000, #091246, #000000, #0c096f);
     background-size: 400% 400%;
     width: 100vw !important;
@@ -39,22 +36,13 @@ header div img {
     align-items: center;
 }
 
-/* .containr div {
-    background-color: white !important;
-    width: 70% !important;
-    height: 30rem !important;
-    padding: 1rem;
-} */
-
-
-
 
 .form-container {
-    width: 800px;
-    height: 450px;
+    width: 950px;
+    height: 500px;
     background: transparent;
-    border: 5px solid #939393;
-    padding: 32px ;
+    border: 5px solid #ffffff;
+    padding: 42px ;
     font-size: 14px;
     font-family: inherit;
     color: white;
@@ -62,9 +50,9 @@ header div img {
     flex-direction: column;
     gap: 20px;
     box-sizing: border-box;
-    border-radius: 16px;
+    border-radius: 5px;
     background-size: 200% 100%;
-    /* animation: gradient 5s ease infinite; */
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.5);
 }
   
 @keyframes gradient {
@@ -172,8 +160,9 @@ border-color: #e81cff;
     cursor: pointer;
     border-radius: 6px;
 }
-  
-  .form-container .form-submit-btn:hover {
+
+
+.form-container .form-submit-btn:hover {
     background-color: #fff;
     border-color: #fff;
 }
@@ -182,7 +171,7 @@ border-color: #e81cff;
   
 .form-container h1 {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
     text-align: center;
     color: #fff;
 }
@@ -199,18 +188,18 @@ border-color: #e81cff;
     font-size: 1.2rem;
     border: none;
     border-radius: 6px;
-    background-color: #f2f2f2;
+    background-color: #dfdfdf;
     color: #333;
     margin-bottom: 1rem;
 }
 
 .form-container form button {
-    width: 100%;
+    width: 10rem;
     padding: 1rem;
     font-size: 1.2rem;
     border: none;
     border-radius: 6px;
-    background-color: #1f125b;
+    background-color: #3a2888;
     color: #fff;
     cursor: pointer;
 }
